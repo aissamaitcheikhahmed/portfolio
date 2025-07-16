@@ -23,34 +23,35 @@ export class MyAppsComponent implements OnInit {
 
     {
      "id": "5131",
-     "name": "Sensify: Phone Sensors Plots",
-     "image": "assets/img/apps/sensify.webp",
-     "link": "https://play.google.com/store/apps/details?id=io.sensify.sensor",
-     "tab": "Android",
-     "caption": "In Jetpack Compose -",
+     "name": "ChatApp with React Native",
+     "image": "assets/img/apps/chatapp.png",
+     "link": "#",
+     "tab": "React Native",
+     "caption": "Cross-platform chat app -",
      "isFull": false,
      "primary":"#3FD67D",
      "background":"#E1E1E1"
    },
    {
      "id": "5132",
-     "name": "Taru: Plant Finder & Weather",
-     "image": "assets/img/apps/taru.webp",
-     "link": "https://play.google.com/store/apps/details?id=com.taru",
-     "tab": "Android",
+     "name": "Code Integrity",
+     "image": "assets/img/apps/codeInterg.jpg",
+     "link": "#",
+     "tab": "Java Spring Boot, React",
      "isFull": false,
-     "caption": "In Android -",
+     "caption": "Made with Java Spring Boot & React -",
      "background":"#F5E7B4"
    },
    {
      "id": "5133",
-     "name": "Hundi: Record Book",
-     "image": "assets/img/apps/hundi.webp",
-     "link": "https://play.google.com/store/apps/details?id=com.hundi.social",
-     "tab": "Android",
-     "caption": "In Flutter -",
+     "name": "Rubric System",
+     "image": "assets/img/apps/Rubricproject.png",
+     "link": "#",
+     "tab": ".NET C# Backend, React TS Frontend",
+     "caption": "Hogent Academic Project -",
      "isFull": true,
-     "background":"#3CE79F"
+     "background":"#3CE79F",
+     "details": "/rubric-details"
    }
   ];
 

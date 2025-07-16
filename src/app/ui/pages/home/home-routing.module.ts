@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent
+  },
+  {
+    path: "rubric-details",
+    loadComponent: () => import('./home-showcases/rubric-detail/rubric-detail.component').then(m => m.RubricDetailComponent)
   }
 ];
 

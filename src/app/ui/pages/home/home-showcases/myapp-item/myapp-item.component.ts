@@ -12,6 +12,29 @@ export class MyappItemComponent implements OnInit {
 
   _mModel?: AppType;
 
+  // Carousel support for Rubric System
+  rubricImages: string[] = [
+    'assets/img/apps/Rubricproject/1.jpg',
+    'assets/img/apps/Rubricproject/2.jpg',
+    'assets/img/apps/Rubricproject/3.jpg',
+    'assets/img/apps/Rubricproject/4.jpg',
+    'assets/img/apps/Rubricproject/5.jpg',
+    'assets/img/apps/Rubricproject/6.jpg',
+    'assets/img/apps/Rubricproject/7.png',
+  ];
+  rubricCurrentIndex = 0;
+
+  get isRubricSystem(): boolean {
+    return this._mModel?.image?.includes('Rubricproject.png') ?? false;
+  }
+
+  nextRubricImage() {
+    this.rubricCurrentIndex = (this.rubricCurrentIndex + 1) % this.rubricImages.length;
+  }
+
+  prevRubricImage() {
+    this.rubricCurrentIndex = (this.rubricCurrentIndex - 1 + this.rubricImages.length) % this.rubricImages.length;
+  }
 
   @Input('data') set model(data: AppType){
     if(data){

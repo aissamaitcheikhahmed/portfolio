@@ -1,5 +1,7 @@
-<a class="main tb-position--relative unlink" ngClass.xs="xs" ngClass.sm="sm" [href]="_mModel?.link" target="_blank"
-    fxLayout="column" #animRefView>
+<a class="main tb-position--relative unlink" ngClass.xs="xs" ngClass.sm="sm"
+   [href]="isRubricSystem ? _mModel?.details : _mModel?.link"
+   [attr.target]="isRubricSystem ? null : '_blank'"
+   fxLayout="column" #animRefView>
     <div class="background" [ngStyle]="{background: _mModel?.background}"></div>
 
     <div fxLayout="column" fxLayoutGap="6" fxLayoutAlign="start stretch" class="content tb-position--relative">
@@ -8,7 +10,14 @@
 
 
         <div class="image-area">
-            <img class="image" [src]="_mModel?.image">
+            <ng-container *ngIf="isRubricSystem; else defaultImage">
+                <button (click)="prevRubricImage(); $event.stopPropagation(); $event.preventDefault();" class="carousel-btn left">&#8592;</button>
+                <img class="image" [src]="rubricImages[rubricCurrentIndex]">
+                <button (click)="nextRubricImage(); $event.stopPropagation(); $event.preventDefault();" class="carousel-btn right">&#8594;</button>
+            </ng-container>
+            <ng-template #defaultImage>
+                <img class="image" [src]="_mModel?.image">
+            </ng-template>
         </div>
         <div ngClass.gt-xs="tb-height--20" ngClass.xs="tb-height--12"></div>
 
