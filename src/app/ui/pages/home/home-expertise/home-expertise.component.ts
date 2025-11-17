@@ -109,216 +109,169 @@ export class HomeExpertiseComponent implements OnInit {
 
   _mTools = [
 
-    // design
+    // Frontend
     {
-      "id": "5131",
+      "id": "8101",
+      "name": "React",
+      "logo": "assets/img/tools/react-svgrepo-com.svg",
+      "link": "https://reactjs.org/",
+      "tab": "frontend",
+      "color": "#61DBFB"
+    },
+    {
+      "id": "8102",
+      "name": "React Native",
+      "logo": "assets/img/tools/react-svgrepo-com.svg",
+      "link": "https://reactnative.dev/",
+      "tab": "frontend",
+      "color": "#61DBFB"
+    },
+    {
+      "id": "8103",
+      "name": "TypeScript",
+      "logo": "assets/img/tools/typescript.png",
+      "link": "https://www.typescriptlang.org/",
+      "tab": "frontend",
+      "color": "#3178C6"
+    },
+    {
+      "id": "8104",
+      "name": "WPF",
+      "logo": "assets/img/tools/wpf.png",
+      "link": "https://docs.microsoft.com/en-us/dotnet/desktop/wpf/",
+      "tab": "frontend",
+      "color": "#512BD4"
+    },
+    {
+      "id": "8105",
+      "name": "Qt Designer",
+      "logo": "assets/img/tools/qt-svgrepo-com.svg",
+      "link": "https://doc.qt.io/qt-6/qtdesigner-manual.html",
+      "tab": "frontend",
+      "color": "#41CD52"
+    },
+
+    // Backend
+    {
+      "id": "7101",
+      "name": "C#",
+      "logo": "assets/img/tools/csharp-svgrepo-com.svg",
+      "link": "https://docs.microsoft.com/en-us/dotnet/csharp/",
+      "tab": "backend",
+      "color": "#512BD4"
+    },
+    {
+      "id": "7102",
+      "name": ".NET Core",
+      "logo": "assets/img/tools/dot-net-svgrepo-com.svg",
+      "link": "https://dotnet.microsoft.com/",
+      "tab": "backend",
+      "color": "#512BD4"
+    },
+    {
+      "id": "7103",
+      "name": "Java Spring Boot",
+      "logo": "assets/img/tools/spring-svgrepo-com.svg",
+      "link": "https://spring.io/projects/spring-boot",
+      "tab": "backend",
+      "color": "#6DB33F"
+    },
+    {
+      "id": "7104",
+      "name": "Node.js",
+      "logo": "assets/img/tools/nodejs.png",
+      "link": "https://nodejs.org/en/",
+      "tab": "backend"
+    },
+    {
+      "id": "7105",
+      "name": "Express",
+      "logo": "assets/img/tools/express.png",
+      "link": "https://expressjs.com/",
+      "tab": "backend"
+    },
+    {
+      "id": "7106",
+      "name": "REST APIs",
+      "logo": "assets/img/tools/api.png",
+      "link": "https://restfulapi.net/",
+      "tab": "backend"
+    },
+
+    // Tools & Technologies
+    {
+      "id": "5101",
+      "name": "PyQt5",
+      "logo": "assets/img/tools/pyqt.png",
+      "link": "https://www.riverbankcomputing.com/software/pyqt/",
+      "tab": "tools",
+      "color": "#41CD52"
+    },
+    {
+      "id": "5102",
+      "name": "Raspberry Pi",
+      "logo": "assets/img/tools/raspberrypi-svgrepo-com.svg",
+      "link": "https://www.raspberrypi.org/",
+      "tab": "tools",
+      "color": "#C51D4A"
+    },
+
+    // Cloud & DevOps
+    {
+      "id": "6101",
+      "name": "Docker",
+      "logo": "assets/img/tools/docker-svgrepo-com.svg",
+      "link": "https://www.docker.com/",
+      "tab": "cloud",
+      "color": "#2496ED"
+    },
+    {
+      "id": "6102",
+      "name": "AWS",
+      "logo": "assets/img/tools/aws-svgrepo-com.svg",
+      "link": "https://aws.amazon.com/",
+      "tab": "cloud",
+      "color": "#FF9900"
+    },
+    {
+      "id": "6103",
+      "name": "Azure",
+      "logo": "assets/img/tools/azure.png",
+      "link": "https://azure.microsoft.com",
+      "tab": "cloud",
+      "color": "#0078D4"
+    },
+    {
+      "id": "6104",
+      "name": "Cosmos DB",
+      "logo": "assets/img/tools/cosmos-db.png",
+      "link": "https://azure.microsoft.com/en-us/services/cosmos-db/",
+      "tab": "cloud",
+      "color": "#0078D4"
+    },
+
+    // Design
+    {
+      "id": "4101",
       "name": "Figma",
       "logo": "assets/img/tools/figma.svg",
       "link": "https://www.figma.com/",
       "tab": "design"
     },
     {
-      "id": "5131",
-      "name": "Adobe XD",
-      "logo": "assets/img/tools/xd.png",
-      "link": "https://www.adobe.com/products/xd.html",
-      "tab": "design"
-    },
-
-    {
-      "id": "5132",
+      "id": "4102",
       "name": "Adobe Photoshop",
       "logo": "assets/img/tools/ps.png",
       "link": "https://www.adobe.com/products/photoshop.html",
       "tab": "design"
     },
     {
-      "id": "5133",
+      "id": "4103",
       "name": "Adobe Illustrator",
       "logo": "assets/img/tools/ai.svg",
       "link": "https://www.adobe.com/products/illustrator.html",
       "tab": "design"
-    },
-    {
-      "id": "5134",
-      "name": "Ink Scape",
-      "logo": "assets/img/tools/inkscape-logo.svg",
-      "link": "https://inkscape.org/",
-      "tab": "design"
-    },
-
-
-
-    // android
-    {
-      "id": "9110",
-      "name": "Android",
-      "logo": "assets/img/tools/android.svg",
-      "link": "https://developer.android.com/",
-      "tab": "android",
-      "color": "#3DDC84"
-    },
-    {
-      "id": "9112",
-      "name": "Retrofit",
-      "logo": "assets/img/tools/square.png",
-      "link": "http://square.github.io/retrofit/",
-      "tab": "android"
-    },
-    {
-      "id": "9113",
-      "name": "RxJava",
-      "logo": "assets/img/tools/RxJava-logo.png",
-      "link": "http://reactivex.io/",
-      "tab": "android"
-    },
-    {
-      "id": "9114",
-      "name": "Jetpack Compose",
-      "logo": "assets/img/tools/pic_jetpack_compose.png",
-      "link": "https://developer.android.com/jetpack/compose",
-      "tab": "android"
-    },
-    {
-      "id": "9115",
-      "name": "Architecture Components",
-      "logo": "assets/img/tools/pic_architecture_components.png",
-      "link": "https://developer.android.com/topic/architecture",
-      "tab": "android"
-    },
-    {
-      "id": "9116",
-      "name": "Kotlin",
-      "logo": "assets/img/tools/kotlin-logo.png",
-      "link": "https://kotlinlang.org/",
-      "tab": "android"
-    },
-
-    // cross
-{
-      "id": "4101",
-      "name": "Flutter",
-      "logo": "assets/img/tools/flutter_logo.svg",
-      "link": "https://flutter.dev/",
-      "tab": "Cross",
-      "color": "#42A5F5"
-    },
-
-    // web
-
-    
-
-    {
-      "id": "8102",
-      "name": "Polymer",
-      "logo": "assets/img/tools/polymer.svg",
-      "link": "https://www.polymer-project.org/",
-      "tab": "web"
-    },
-
-    {
-      "id": "8103",
-      "name": "WebComponents",
-      "logo": "assets/img/tools/web-component-logo.png",
-      "link": "https://www.webcomponents.org/",
-      "tab": "web"
-    },
-    {
-      "id": "8105",
-      "name": "HighCharts js",
-      "logo": "assets/img/tools/highchart-logo.png",
-      "link": "https://www.highcharts.com/",
-      "tab": "web"
-    },
-    {
-      "id": "8108",
-      "name": "Sass",
-      "logo": "assets/img/tools/sass-logo.svg",
-      "link": "https://sass-lang.com/",
-      "tab": "web",
-      "color": "#CF649A"
-    },
-    {
-      "id": "8106",
-      "name": "D3 js",
-      "logo": "assets/img/tools/d3.svg",
-      "link": "https://d3js.org/",
-      "tab": "web"
-    },
-    {
-      "id": "8104",
-      "name": "Ngrx",
-      "logo": "assets/img/tools/ngrx.svg",
-      "link": "https://ngrx.io/",
-      "tab": "web"
-    },
-    {
-      "id": "8101",
-      "name": "Angular",
-      "logo": "assets/img/tools/angular.png",
-      "link": "https://angular.io/",
-      "tab": "web",
-      "color": "#FF4369"
-    },
-    {
-      "id": "8109",
-      "name": "Scully",
-      "logo": "assets/img/tools/scully.svg",
-      "link": "https://https://scully.io/",
-      "tab": "web",
-    },
-
-    // backend
-
-    {
-      "id": "7121",
-      "name": "Express",
-      "logo": "assets/img/tools/express.png",
-      "link": "https://expressjs.com/",
-      "tab": "back-end"
-    },
-    {
-      "id": "7122",
-      "name": "Sequelize",
-      "logo": "assets/img/tools/sequelize.png",
-      "link": "http://docs.sequelizejs.com/",
-      "tab": "back-end"
-    },
-
-    {
-      "id": "7126",
-      "name": "NodeJs",
-      "logo": "assets/img/tools/nodejs.png",
-      "link": "https://nodejs.org/en/",
-      "tab": "back-end"
-    },
-
-    // cloud
-
-    {
-      "id": "6121",
-      "name": "Firebase",
-      "logo": "assets/img/tools/firebase.svg",
-      "link": "https://firebase.google.com/",
-      "tab": "cloud"
-    },
-
-    {
-      "id": "6123",
-      "name": "Azure",
-      "logo": "assets/img/tools/azure.png",
-      "link": "https://azure.microsoft.com",
-      "tab": "cloud"
-    },
-
-    {
-      "id": "6124",
-      "name": "Google cloud",
-      "logo": "assets/img/tools/google-cloud.png",
-      "link": "https://cloud.google.com/",
-      "tab": "cloud"
-    },
-
+    }
 
   ]
 
